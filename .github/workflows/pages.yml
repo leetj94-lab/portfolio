@@ -15,6 +15,7 @@ jobs:
         run: |
           node --check dist/content.js
           node --check dist/app.js
+          node tests/validate-content.mjs
       - name: Check root page assets
         run: |
           python - <<'PY'

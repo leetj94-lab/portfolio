@@ -31,3 +31,11 @@ Open `http://localhost:8000`. No dependencies or build required.
 ## Deploy
 
 In **Settings → Pages**, choose **Deploy from a branch**, branch **main**, folder **/ (root)**. The root `index.html` is the entry point; shared source files remain in `dist/`. The Actions workflow checks JavaScript on pushes without running a competing deployment. Résumé links resolve relative to the application script, so both the root page and `dist/` preview work.
+
+## Recruiter-ready case studies
+
+The featured cases include explicit system names, classified outcome/scope metrics, contribution boundaries and expandable implementation notes. All seven cases are available through persistent desktop navigation and a mobile project selector. Company source code, internal screens and production data are excluded; public diagrams describe high-level workflows.
+
+The public résumé has both PDF (`dist/assets/Taekjun_Lee_Resume.pdf`) and HTML (`dist/resume.html`) versions. Rebuild both with `python scripts/build_resume.py` (ReportLab and DejaVu Sans required). No company materials are embedded.
+
+Run `node tests/validate-content.mjs` from the repository root to check translations, graph integrity, metric classifications, entry-point assets and the PDF/share-image presence. If modifying entry-point metadata, keep the root `index.html` aligned with `dist/index.html`; root resource paths include `dist/`.
