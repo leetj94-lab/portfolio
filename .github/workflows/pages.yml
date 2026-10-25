@@ -1,33 +1,30 @@
-name: Deploy portfolio to GitHub Pages
+name: Check portfolio pages
 on:
   push:
     branches: [main]
+  pull_request:
   workflow_dispatch:
 permissions:
   contents: read
-  pages: write
-  id-token: write
-concurrency:
-  group: pages
-  cancel-in-progress: true
 jobs:
-  deploy:
+  validate:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - name: Validate JavaScript
         run: |
           node --check dist/content.js
           node --check dist/app.js
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-      - name: Upload site
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist
-      - name: Deploy
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Check root page assets
+        run: |
+          python - <<'PY'
+          from html.parser import HTMLParser
+          from pathlib import Path
+          class Assets(HTMLParser):
+              def handle_starttag(self, tag, attrs):
+                  attrs = dict(attrs)
+                  value = attrs.get('src') or (attrs.get('href') if tag == 'link' else None)
+                  if value and '://' not in value:
+                      assert Path(value).is_file(), f'Missing asset: {value}'
+          Assets().feed(Path('index.html').read_text())
+          PY

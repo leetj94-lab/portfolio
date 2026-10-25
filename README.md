@@ -1,6 +1,6 @@
 # Taekjun (TJ) Lee — Portfolio
 
-A bilingual portfolio for business systems, software development and automation roles. Buildless HTML, CSS and JavaScript; deployed to GitHub Pages from `dist/`.
+A bilingual portfolio for business systems, software development and automation roles. Buildless HTML, CSS and JavaScript; served by GitHub Pages from the `main` branch root. The root `index.html` loads the shared application and assets from `dist/`.
 
 ## Content
 
@@ -30,4 +30,4 @@ Open `http://localhost:8000`. No dependencies or build required.
 
 ## Deploy
 
-The GitHub Actions workflow publishes `dist/` on pushes to `main`. Repository **Settings → Pages → Source** must be **GitHub Actions**. The configured project path is `/portfolio/`; all application assets use relative paths.
+In **Settings → Pages**, choose **Deploy from a branch**, branch **main**, folder **/ (root)**. The root `index.html` is the entry point; shared source files remain in `dist/`. The Actions workflow checks JavaScript on pushes without running a competing deployment. Résumé links resolve relative to the application script, so both the root page and `dist/` preview work.
