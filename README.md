@@ -1,1 +1,33 @@
-# portfolio
+# Taekjun (TJ) Lee — Portfolio
+
+A bilingual portfolio for business systems, software development and automation roles. Buildless HTML, CSS and JavaScript; deployed to GitHub Pages from `dist/`.
+
+## Content
+
+- Three featured cases: document delivery, master data and digital twin.
+- Seven case studies with interactive architecture/workflow diagrams.
+- English/Korean content, responsive layouts, keyboard-accessible workflow controls and reduced-motion support.
+- Printable résumé at `dist/resume.html` (Print / Save as PDF).
+
+## Edit
+
+- `dist/content.js` — project copy, metrics, roles, technology, graph nodes and edges. `L(English, Korean)` defines bilingual content.
+- `dist/app.js` — homepage copy, layout, routing and SVG overview graphics.
+- `dist/styles.css` — visual system and responsive styles.
+- `dist/resume.html` — printable résumé.
+
+Diagram nodes use a 1000 × 430 coordinate space: `[id, x, y, title, subtitle, description]`. Edges use `[sourceId, targetId, optionalStyle]`. Use `loop` or `feedback` for dashed edges.
+
+## Preview
+
+Serve `dist/` with any static web server, for example:
+
+```bash
+python -m http.server 8000 --directory dist
+```
+
+Open `http://localhost:8000`. No dependencies or build required.
+
+## Deploy
+
+The GitHub Actions workflow publishes `dist/` on pushes to `main`. Repository **Settings → Pages → Source** must be **GitHub Actions**. The configured project path is `/portfolio/`; all application assets use relative paths.
