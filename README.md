@@ -39,3 +39,9 @@ The featured cases include explicit system names, classified outcome/scope metri
 The public résumé has both PDF (`dist/assets/Taekjun_Lee_Resume.pdf`) and HTML (`dist/resume.html`) versions. Rebuild both with `python scripts/build_resume.py` (ReportLab and DejaVu Sans required). No company materials are embedded.
 
 Run `node tests/validate-content.mjs` from the repository root to check translations, graph integrity, metric classifications, entry-point assets and the PDF/share-image presence. If modifying entry-point metadata, keep the root `index.html` aligned with `dist/index.html`; root resource paths include `dist/`.
+
+## Role-based exploration and connected journey
+
+- `dist/story.js` defines the five work filters, role-specific card descriptions and six connected journey stages. The full journey shows the next problem, expanding responsibility, delivered result and foundation carried forward. Dates can overlap; this is a logical progression, not a claim that every project ran consecutively.
+- Shareable routes include `#work/development`, `#work/automation`, `#work/data`, `#work/all`, `#journey` and `#journey/master-data`.
+- Case pages link to the prior foundation and next extension; returning to work preserves the last selected filter in the session. Global navigation has desktop links and a keyboard-accessible mobile menu.
