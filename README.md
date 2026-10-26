@@ -36,7 +36,7 @@ In **Settings → Pages**, choose **Deploy from a branch**, branch **main**, fol
 
 The featured cases include explicit system names, classified outcome/scope metrics, contribution boundaries and expandable implementation notes. All seven cases are available through persistent desktop navigation and a mobile project selector. Company source code, internal screens and production data are excluded; public diagrams describe high-level workflows.
 
-The public résumé has both PDF (`dist/assets/Taekjun_Lee_Resume.pdf`) and HTML (`dist/resume.html`) versions. Rebuild both with `python scripts/build_resume.py` (ReportLab and DejaVu Sans required). No company materials are embedded.
+The public résumé has both PDF (`dist/assets/Taekjun_Lee_Resume_20261026.pdf`) and HTML (`dist/resume.html`) versions. Rebuild both with `python scripts/build_resume.py` (ReportLab and DejaVu Sans required). No company materials are embedded.
 
 Run `node tests/validate-content.mjs` from the repository root to check translations, graph integrity, metric classifications, entry-point assets and the PDF/share-image presence. If modifying entry-point metadata, keep the root `index.html` aligned with `dist/index.html`; root resource paths include `dist/`.
 
@@ -49,3 +49,13 @@ Run `node tests/validate-content.mjs` from the repository root to check translat
 - Company code, internal screens and production records are excluded. Scope and outcome labels and the printable/PDF résumé remain consistent.
 
 Release acceptance checks are recorded in `docs/final-review.md`.
+
+
+## October 26 navigation and presentation update
+
+- Persistent left navigation on desktop, compact native menu at 960px and below.
+- Three original SVG concept illustrations introduce the selected systems; detailed interactive workflows stay inside the cases.
+- Career focus: facilities engineering → data and systems analysis → development and business automation. Formal titles remain explicit.
+- AI philosophy explains reusable skills for requirements, API/UI consistency, testability and recovery with a document-ingestion example.
+- All active résumé links use the supplied latest two-page PDF. The old PDF is removed; `resume.html` presents the same current document.
+- `scripts/build_resume.py` is a legacy generator for the previous résumé and is not part of deployment. Do not use it to replace the supplied current PDF.

@@ -29,3 +29,20 @@ Use a single work overview: three selected production systems followed by four a
 - Preserved old shared category links by resolving them to the current work overview.
 
 GitHub checks and Pages publication are verified separately for the release commit. This review concerns the public portfolio and supplied career information; proprietary implementations and internal measurements are not independently audited.
+
+
+## October 26 presentation review
+
+Desktop left navigation, responsive native menu, three concept covers, a three-stage career focus and a bilingual AI philosophy section are now implemented. The concepts are explicitly labelled illustrations, not internal product screenshots. Formal job titles are distinguished from the changing scope of responsibilities; the standalone US rollout career row is removed.
+
+The supplied revised PDF replaces the previous public PDF. Every active résumé action and the legacy HTML viewer points to the current document. The PDF bytes were compared with the supplied revised output.
+
+Validation performed on the local preview:
+- Browser review of the desktop overview, three project covers and AI philosophy.
+- 320/375/768/1024px iframe viewports: no page-width overflow, one H1, all three concept assets loaded.
+- Native mobile menu opens and closes after navigation. Corrected a narrow-screen menu label wrapping issue discovered during visual review.
+- All seven project routes render, retain their workflow controls and have no mobile page-width overflow.
+- EN/KO change preserves selected workflow stage 3.
+- Existing content, translation, graph, entry-point and combined-script checks pass.
+
+The public PDF is the requested latest supplied résumé; its destination-specific relocation wording is retained. The career progression is portfolio narrative, not a claim of three official job titles.

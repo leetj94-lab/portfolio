@@ -27,6 +27,7 @@ jobs:
                   attrs = dict(attrs)
                   value = attrs.get('src') or (attrs.get('href') if tag == 'link' else None)
                   if value and '://' not in value:
-                      assert Path(value).is_file(), f'Missing asset: {value}'
+                      assert Path(value.split('?')[0]).is_file(), f'Missing asset: {value}'
           Assets().feed(Path('index.html').read_text())
           PY
+
