@@ -50,3 +50,11 @@ The public PDF is the requested latest supplied résumé; its destination-specif
 ## Cool palette and disclosure placement
 
 Replaced olive, beige and orange tones with cool slate surfaces, navy text and blue accents, including SVG concepts, workflow diagrams and share artwork. Moved the existing disclosure above project cards and expanded it by default. Detailed cases show the compact notice above their title. Desktop browser review confirmed both placements and no page overflow. Existing content and script checks pass.
+
+## Typography and reading review
+
+The former 7–12px supporting text made roles, metadata, notices and technical explanations difficult to read. Main explanatory copy now uses 16px, case/card supporting text 14–15px and compact information labels 12–13px, with darker secondary text and more line spacing. Decorative brand text remains smaller.
+
+Project cards become two columns on tablet/narrow desktop and one on mobile. Mobile metrics stack vertically; implementation notes use a single reading column. Workflow nodes use larger type and a 1000px scrollable diagram rather than shrinking labels. Mobile menu and project selectors retain usable spacing. The disclosure remains above the projects with a shorter equivalent explanation.
+
+Browser QA: desktop projects and mobile English/Korean copy reviewed visually; 320/375/768/1024px viewport-width checks pass. All seven case pages show no page-width overflow; inspected workflow nodes do not overlap. Existing graph/content/entry-point/script checks pass.
