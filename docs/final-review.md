@@ -46,3 +46,7 @@ Validation performed on the local preview:
 - Existing content, translation, graph, entry-point and combined-script checks pass.
 
 The public PDF is the requested latest supplied résumé; its destination-specific relocation wording is retained. The career progression is portfolio narrative, not a claim of three official job titles.
+
+## Cool palette and disclosure placement
+
+Replaced olive, beige and orange tones with cool slate surfaces, navy text and blue accents, including SVG concepts, workflow diagrams and share artwork. Moved the existing disclosure above project cards and expanded it by default. Detailed cases show the compact notice above their title. Desktop browser review confirmed both placements and no page overflow. Existing content and script checks pass.
