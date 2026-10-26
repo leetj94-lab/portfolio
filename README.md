@@ -40,8 +40,12 @@ The public résumé has both PDF (`dist/assets/Taekjun_Lee_Resume.pdf`) and HTML
 
 Run `node tests/validate-content.mjs` from the repository root to check translations, graph integrity, metric classifications, entry-point assets and the PDF/share-image presence. If modifying entry-point metadata, keep the root `index.html` aligned with `dist/index.html`; root resource paths include `dist/`.
 
-## Role-based exploration and connected journey
+## Final information architecture
 
-- `dist/story.js` defines the five work filters, role-specific card descriptions and six connected journey stages. The full journey shows the next problem, expanding responsibility, delivered result and foundation carried forward. Dates can overlap; this is a logical progression, not a claim that every project ran consecutively.
-- Shareable routes include `#work/development`, `#work/automation`, `#work/data`, `#work/all`, `#journey` and `#journey/master-data`.
-- Case pages link to the prior foundation and next extension; returning to work preserves the last selected filter in the session. Global navigation has desktop links and a keyboard-accessible mobile menu.
+- The homepage presents three selected production systems and four additional experiences once each. There are no overlapping role-filter tabs. Contribution labels identify relevant skills without duplicating cases.
+- Each case contains business change, personally delivered work grouped by applicable software/data/operations responsibilities, an interactive workflow, design choices and expandable technical detail. Early analysis/design roles remain distinct from later full-stack delivery.
+- `dist/story.js` owns contribution labels, six connected journey stages and delivery-section content. The journey separates the problem, responsibility, result/scope and foundation carried forward; overlapping dates are explicit.
+- Current routes: `#work`, `#experience`, `#journey`, `#journey/master-data` and `#project/master-data`. Previous `#work/...` category links resolve to the current work overview.
+- Company code, internal screens and production records are excluded. Scope and outcome labels and the printable/PDF résumé remain consistent.
+
+Release acceptance checks are recorded in `docs/final-review.md`.
