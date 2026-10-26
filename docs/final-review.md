@@ -58,3 +58,18 @@ The former 7–12px supporting text made roles, metadata, notices and technical 
 Project cards become two columns on tablet/narrow desktop and one on mobile. Mobile metrics stack vertically; implementation notes use a single reading column. Workflow nodes use larger type and a 1000px scrollable diagram rather than shrinking labels. Mobile menu and project selectors retain usable spacing. The disclosure remains above the projects with a shorter equivalent explanation.
 
 Browser QA: desktop projects and mobile English/Korean copy reviewed visually; 320/375/768/1024px viewport-width checks pass. All seven case pages show no page-width overflow; inspected workflow nodes do not overlap. Existing graph/content/entry-point/script checks pass.
+
+## Submission review - auxiliary copy and résumé coverage
+
+Decision: ready to submit as a case-study portfolio alongside the current résumé. No content or navigation blocker remains from this review.
+
+- Implementation helper text shortened to “Select a topic for implementation details.” and displayed at 13px; workflow hints no longer repeat the same interaction instruction. Journey reading guidance is shorter.
+- Kept substantive implementation prose at 16px and retained measurement scope and platform/collaborator boundaries.
+- Reviewed the source text of all seven cases against the current Halter-targeted résumé: document intake/validation/AWS/recovery; shared identities/lifecycle/validation/reconciliation/results; 3D asset context/vendor foundation/integrations/deployment; drawing standards/search/checks; ETL operations/governance/user enablement; shared development skills/prototype boundaries; facilities operations/maintenance analysis. Each has adequate detail for its purpose.
+- Checked overview, journey and all seven case views in EN/KO at 320px and 1280px. One narrow delivery case overflow caused by a long service-name token was found, fixed with proper grid-child sizing and word wrapping, and rechecked in both languages.
+- Opened all 12 technical notes across the five cases that have them at 320px; no page-width overflow. Selected the final workflow stage on all seven cases; selection details, disabled end controls and jump targets were correct. Language change preserved the selected stage and open notes.
+- One H1 per view, no duplicate IDs or missing case jump targets in the checked views. Three main project illustrations, résumé routes and removal of copy controls reviewed.
+- Desktop visual review covered all seven case headers and the journey; helper-text hierarchy reviewed at the implementation section.
+- The existing content/graph/translations/entry-point/combined-script checks and JavaScript syntax checks pass.
+
+The review checks communication, consistency and interface behaviour. Public descriptions remain case studies of supplied professional experience, rather than access to proprietary implementations. A future independent code sample is optional enrichment, not a condition for submitting this release.
