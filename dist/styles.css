@@ -56,3 +56,5 @@ header{background:#edf1f7}.button{background:#172b4d;border-color:#172b4d}.butto
 .card-content p.card-roles{font-size:14px;line-height:1.7}.rail-caption,.card-art figcaption{font-size:12px}.brand-name small{font-size:11px}
 
 .qualifications .degree+.degree{margin-top:20px}.qualifications .degree strong{margin-top:7px}.qualifications .education-block>.eyebrow{font-size:12px}.qualifications .degree>span{font-size:14px;line-height:1.75;color:var(--muted)}
+
+.email-copy{display:flex;align-items:center;justify-content:flex-end;gap:12px;flex-wrap:wrap}.copy-email{font:14px/1.5 var(--sans);padding:9px 13px;min-height:42px;border:1px solid #b7c7df;border-radius:6px;background:#fff;color:#183e78}.copy-email:hover{background:#e5edfb}.copy-status{font-size:13px;line-height:1.7;color:#526279;overflow-wrap:anywhere}.case-contact .email-copy{justify-content:flex-start}.contact-action .email-copy{max-width:360px}@media(max-width:640px){.email-copy{justify-content:flex-start}.contact-action .email-copy{max-width:100%}.case-contact .email-copy{flex-basis:100%}}
